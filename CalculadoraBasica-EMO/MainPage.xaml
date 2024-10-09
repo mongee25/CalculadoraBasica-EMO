@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraBasica_EMO.MainPage">
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- PANTALLA DE RESULTADO -->
+            <Label x:Name="lbResultado" Text="0" Grid.Row="0" Grid.ColumnSpan="4" HorizontalOptions="End" VerticalOptions="Center" FontSize="50" TextColor="White" />
+
+            <!-- FILA 1 -->
+            <Button Text="C" Grid.Row="1" Grid.Column="0" TextColor="OrangeRed" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75" HeightRequest="75" Clicked="Boton_Limpiar"/>
+            <Button Text="⌫" Grid.Row="1" Grid.Column="1" TextColor="GreenYellow" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Eliminar"/>
+            <Button Text="%" Grid.Row="1" Grid.Column="2" TextColor="GreenYellow" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="÷" Grid.Row="1" Grid.Column="3" TextColor="GreenYellow" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Dividir"/>
+
+            <!-- FILA 2 -->
+            <Button Text="7" Grid.Row="2" Grid.Column="0" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="8" Grid.Row="2" Grid.Column="1" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="9" Grid.Row="2" Grid.Column="2" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="*" Grid.Row="2" Grid.Column="3" TextColor="GreenYellow" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Multiplicacion"/>
+
+            <!-- FILA 3 -->
+            <Button Text="4" Grid.Row="3" Grid.Column="0" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="5" Grid.Row="3" Grid.Column="1" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="6" Grid.Row="3" Grid.Column="2" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="-" Grid.Row="3" Grid.Column="3" TextColor="GreenYellow" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Resta"/>
+
+            <!-- FILA 4 -->
+            <Button Text="1" Grid.Row="4" Grid.Column="0" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="2" Grid.Row="4" Grid.Column="1" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="3" Grid.Row="4" Grid.Column="2" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="+" Grid.Row="4" Grid.Column="3" TextColor="GreenYellow" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Suma"/>
+
+            <!-- FILA 5 -->
+            <Button Text="+/-" Grid.Row="5" Grid.Column="0" TextColor="White" BackgroundColor="#333333" HorizontalOptions="FillAndExpand" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75"/>
+            <Button Text="0" Grid.Row="5" Grid.Column="1" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Nums"/>
+            <Button Text="," Grid.Row="5" Grid.Column="2" TextColor="White" BackgroundColor="#333333" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Decimal"/>
+            <Button Text="=" Grid.Row="5" Grid.Column="3" TextColor="White" BackgroundColor="GreenYellow" CornerRadius="60" FontSize="24" WidthRequest="75"  HeightRequest="75" Clicked="Boton_Resultado"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
